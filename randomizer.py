@@ -8,13 +8,13 @@ async def get_random_percentage():
     return {'percentage': randint(0, 100)}
 
 @app.get("/percentage/{lower_limit}/{upper_limit}")
-async def get_random_percentage(lower_limit: int, upper_limit: int):
+async def get_random_percentage1(lower_limit: int, upper_limit: int):
     if(lower_limit >= upper_limit):
         return {'error': 'The upper limit must be greater than the lower limit!', 'lower limit': lower_limit, 'upper limit': upper_limit}
     return {'percentage': randint(lower_limit, upper_limit)}
 
 @app.get("/percentage/{lower_limit}/{upper_limit}/{amount}")
-async def get_random_percentage(lower_limit: int, upper_limit: int, amount: int):
+async def get_random_percentage2(lower_limit: int, upper_limit: int, amount: int):
     if(lower_limit >= upper_limit):
         return {'error': 'The upper limit must be greater than the lower limit!', 'lower limit': lower_limit, 'upper limit': upper_limit}
 
