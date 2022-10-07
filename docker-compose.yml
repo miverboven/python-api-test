@@ -1,0 +1,5 @@
+services:
+ randomizer-service:
+  image: miverboven/python-api-test
+  ports:
+    - 8000:8000
