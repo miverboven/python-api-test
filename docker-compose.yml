@@ -3,7 +3,7 @@ services:
  randomizer-service:
   image: miverboven/python-api-test
   deploy:
-    replicas: 5
+    replicas: 10
     restart_policy:
       condition: on-failure
   ports:
